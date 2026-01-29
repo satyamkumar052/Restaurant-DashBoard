@@ -20,28 +20,30 @@ This application provides real-time insights for restaurant owners. It includes 
 
 Follow these steps to run the project locally.
 
+so first run this command
+```bash
+https://github.com/satyamkumar052/Restaurant-DashBoard.git
+```
+
 ### 1. Backend Setup
 The backend runs on Port `8080`.
 
 1.  Navigate to the backend folder:
     ```bash
     cd backend
-    ```
-2.  Install dependencies:
-    ```bash
     npm install
     ```
-3.  **Configure Environment Variables:**
+2.  **Configure Environment Variables:**
     Create a `.env` file in the `backend` folder and add your MongoDB connection string:
     ```env
     MONGOURL=mongodb://127.0.0.1:27017/restaurant_analytics
     ```
-4.  **Seed the Database (Optional):**
+3.  **Seed the Database (Optional):**
     If you need dummy data, run the seeder script:
     ```bash
     node init/data.js
     ```
-5.  Start the Server:
+4.  Start the Server:
     ```bash
     npm run dev
     ```
@@ -53,13 +55,10 @@ The frontend runs on Port `3000`.
 1.  Open a new terminal and navigate to the frontend folder:
     ```bash
     cd frontend
-    ```
-2.  Install dependencies:
-    ```bash
     npm install
     ```
-3.  Start the Development Server:
+2.  Start the Development Server:
     ```bash
     npm run dev
     ```
-4.  Open your browser and visit: `http://localhost:3000`
+3.  Open your browser and visit: `http://localhost:3000`
