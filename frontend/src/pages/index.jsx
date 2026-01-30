@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, MapPin, Utensils, TrendingUp, ArrowRight, AlertTriangle } from "lucide-react";
 import { fetchRestaurants, fetchTopRestaurants } from "../utils/api";
+import Head from "next/head";
 
 export default function Home() {
     // State
@@ -65,6 +66,10 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>Kitchen Spurs Analytics</title>
+                <meta name="description" content="Restaurant Dashboard" />
+            </Head>
             {/* Page Header */}
             <div className="mb-4">
                 <h2 className="fw-bold text-dark">Dashboard Overview</h2>

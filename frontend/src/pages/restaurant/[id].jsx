@@ -51,6 +51,10 @@ export default function RestaurantAnalytics() {
 
   return (
     <>
+        <Head>
+            <title>{restaurantName ? restaurantName : "Loading..."}</title>
+            <meta name="description" content="Restaurant Dashboard" />
+        </Head>
         {/* Header Section */}
         <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
