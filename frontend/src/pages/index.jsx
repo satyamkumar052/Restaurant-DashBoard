@@ -214,7 +214,7 @@ export default function Home() {
                         {/* Logic: If there is an error, we don't show "No results found", we show nothing (alert handles it) */}
                         {!error && (
                             <div className="alert alert-light border text-center text-muted">
-                                No restaurants found matching your filters.
+                                No restaurants found matching your filters. Please select different criteria or clear the filters to see all branches.
                             </div>
                         )}
                     </div>
