@@ -66,6 +66,7 @@ export default function Home() {
 
     return (
         <>
+        {/* Page title */}
             <Head>
                 <title>Kitchen Spurs Analytics</title>
                 <meta name="description" content="Restaurant Dashboard" />
