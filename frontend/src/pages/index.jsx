@@ -5,18 +5,18 @@ import { fetchRestaurants, fetchTopRestaurants } from "../utils/api";
 import Head from "next/head";
 
 export default function Home() {
-    // State
+    // Component State
     const [restaurants, setRestaurants] = useState([]);
     const [topRestaurants, setTopRestaurants] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // Filters
+    // Search Filters
     const [search, setSearch] = useState("");
     const [cuisine, setCuisine] = useState("");
     const [location, setLocation] = useState("");
 
-    // 1. Fetch Top Performers (Safe Mode)
+    // 1. Fetch Top Performing Restaurants
     useEffect(() => {
         const loadTop = async () => {
             try {
