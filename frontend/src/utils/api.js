@@ -18,17 +18,17 @@ const safeRequest = async (request) => {
   }
 };
 
-// 1. Get List 
+// 1. Get Restaurant List
 export const fetchRestaurants = (params) => {
   return safeRequest(api.get('/getRestaurent', { params }));
 };
 
-// 2. Get Trends
+// 2. Get Restaurant Trends
 export const fetchTrends = (id, params) => {
   return safeRequest(api.get(`/${id}/trends`, { params }));
 };
 
-// 3. Get Top 3
+// 3. Get Top 3 Restaurants
 export const fetchTopRestaurants = (params) => {
   return safeRequest(api.get('/top', { params }));
 };
